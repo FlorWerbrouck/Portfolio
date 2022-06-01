@@ -1,8 +1,7 @@
 :root {
     /* colors */
-    --color-white: #FFF;
+    --color-white: #FDFDFD;
     --color-black: #202020;
-    --color-pink: #F9D9E8;
 }
 
 html {
@@ -11,7 +10,7 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: "rooney-sans",sans-serif;
-    background-color: var(--color-pink);
+    background-color: #e5daf0;
     color: var(--color-black);
     font-weight: 700;
     box-sizing: border-box;
