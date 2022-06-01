@@ -78,17 +78,6 @@ body {
 \*------------------------------------*/
 
 /*
-Elements: Images
----
-Default markup for images to make them responsive
-*/
-
-img {
-    max-width: 100%;
-    vertical-align: top;
-}
-
-/*
     Elements: typography
     ---
     Default markup for typographic elements
@@ -180,7 +169,7 @@ input::placeholder {
 hr {
     border: 2px solid var(--color-black);
     border-radius: 4px;
-    margin: 0 15%;
+    margin: 0 15% 24px;
 }
 
 /*------------------------------------*\
@@ -297,6 +286,24 @@ hr {
     bottom: 0;
     text-align: center;
     z-index: 1;
+}
+
+.c-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.c-icon-placeholder {
+    margin: 0 12px;
+    line-height: 0px;
+    opacity: 0.6;
+    transition-timing-function: ease-in-out;
+    transition: 0.4s;
+}
+
+.c-icon-placeholder:hover, .c-icon-placeholder:focus, .c-icon-placeholder:active {
+    opacity: 1;
+    outline: none;
 }
 
 /*------------------------------------*\
