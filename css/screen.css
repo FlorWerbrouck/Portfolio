@@ -27,15 +27,13 @@ html {
 }
 
 ::-moz-selection {
-    
-    background-color: var(--color-pink);
+    background-color: var(--color-black);
     color: var(--color-white);
     text-shadow: none;
 }
 
 ::selection {
-    
-    background-color: var(--color-pink);
+    background-color: var(--color-black);
     color: var(--color-white);
     text-shadow: none;
 }
