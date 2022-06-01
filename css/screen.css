@@ -35,15 +35,10 @@ html {
     background-color: var(--color-pink);
     color: var(--color-black);
     font-weight: 700;
-    overflow: hidden;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: "zero" 1;
-}
-
-body {
-    overflow: hidden;
 }
 
 *,
@@ -93,64 +88,9 @@ h2 {
     margin: 0 0 24px;
 }
 
-h3 {
-    font-weight: 400;
-    font-size: 20px;
-}
-
-h4 {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 0;
-}
-
-h5,
-h6 {
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 0;
-}
-
-p,
-ol,
-ul,
-dl,
-table,
-address,
-figure {
+p {
     margin: 0 0 16px;
     font-weight: 400;
-}
-
-ul,
-ol {
-    padding-left: 24px;
-}
-
-li ul,
-li ol {
-    margin-bottom: 0;
-}
-
-blockquote {
-    font-style: normal;
-    font-size: 23px;
-    line-height: 32px;
-    margin: 0 0 24px;
-}
-
-blockquote * {
-    font-size: inherit;
-    line-height: inherit;
-}
-
-figcaption {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    margin-top: 8px;
 }
 
 label,
@@ -162,12 +102,9 @@ select {
     width: 100%;
 }
 
-input::placeholder {
-    color: gray;
-}
-
 hr {
     border: 2px solid var(--color-black);
+    background-color: var(--color-black);
     border-radius: 4px;
     margin: 0 15% 24px;
 }
@@ -188,86 +125,12 @@ hr {
     flex-wrap: wrap;
 }
 
-/* Horizontal alignment modifiers*/
-
-.o-layout--justify-start {
-    justify-content: flex-start;
-}
-
-.o-layout--justify-end {
-    justify-content: flex-end;
-}
-
 .o-layout--justify-center {
     justify-content: center;
 }
 
-.o-layout--justify-space-around {
-    justify-content: space-around;
-}
-
-.o-layout--justify-space-evenly {
-    justify-content: space-evenly;
-}
-
-.o-layout--justify-space-between {
-    justify-content: space-between;
-}
-
-/* Vertical alignment modifiers */
-
-.o-layout--align-start {
-    align-items: flex-start;
-}
-
-.o-layout--align-end {
-    align-items: flex-end;
-}
-
 .o-layout--align-center {
     align-items: center;
-}
-
-.o-layout--align-baseline {
-    align-items: baseline;
-}
-
-/* Vertical alignment modifiers that only work if there is one than one flex item */
-
-.o-layout--align-content-start {
-    align-content: start;
-}
-
-.o-layout--align-content-end {
-    align-content: end;
-}
-
-.o-layout--align-content-center {
-    align-content: center;
-}
-
-.o-layout--align-content-space-around {
-    align-content: space-around;
-}
-
-.o-layout--align-content-space-between {
-    align-content: space-between;
-}
-
-
-/*
-    Objects: List
-    ---
-    Small reusable object to remove default list styling from lists
-*/
-
-.o-list {
-    list-style: none;
-    padding: 0;
-}
-
-.o-guidelines {
-    background-color: rgba(0,0,0,0.2)
 }
 
 /*
@@ -278,6 +141,7 @@ hr {
 
 .c-content {
     text-align: center;
+    padding: 0 50px;
 }
 
 .c-footer {
@@ -307,85 +171,120 @@ hr {
 }
 
 /*------------------------------------*\
-  #UTILITIES
-\*------------------------------------*/
-
-/*
-    Utilities: text
-    ---
-    Utility classes to put layout on text
-*/
-
-/*
-    Utilities: spacing
-    ---
-    Utility classes to put specific margins and paddings onto elements
-*/
-
-.u-pt-clear {
-    padding-top: 0 !important;
-}
-
-.u-mt-xl {
-    margin-top: 56px !important;
-}
-
-.u-mb-clear {
-    margin-bottom: 0 !important;
-}
-
-.u-mb-xs {
-    margin-bottom: 4px !important;
-}
-
-.u-mb-sm {
-    margin-bottom: 8px !important;
-}
-
-.u-mb-md {
-    margin-bottom: 16px !important;
-}
-
-.u-mb-lg {
-    margin-bottom: 32px !important;
-}
-
-.u-mb-xl {
-    margin-bottom: 48px !important;
-}
-
-
-/*
-    Utilities: max-width
-    ---
-    Utility classes to put specific max widths onto elements
-*/
-
-.u-max-width-sm {
-    max-width: 36em !important;
-}
-
-.u-max-width-md {
-    max-width: 45em !important;
-}
-
-.u-max-width-lg {
-    max-width: 60em !important;
-}
-
-.u-max-width-xl {
-    max-width: 75em !important;
-}
-
-.u-max-width-none {
-    max-width: none !important;
-}
-
-
-/*------------------------------------*\
 #MEDIA
 \*------------------------------------*/
 
+/*
+    Media: extra large desktop
+    ---
+    Responsive styles for extra large desktops
+*/
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 132px;
+    }
+    
+    h2 {
+        font-size: 92px;
+    }
+    
+}
+
+/*
+    Media: desktop
+    ---
+    Responsive styles for desktops
+*/
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 92px;
+    }
+
+    h2 {
+        font-size: 56px;
+    }
+}
+
+/*
+    Media: Tablets
+    ---
+    Responsive styles for tablets
+*/
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .c-icon-placeholder {
+        opacity: 1;
+        margin: 0 10px;
+    }
+
+    .c-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/*
+    Media: large mobile
+    ---
+    Responsive styles for mobile devices
+*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 54px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .c-icon-placeholder {
+        margin: 0 8px;
+    }
+
+    .c-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/*
+    Media: mobile
+    ---
+    Responsive styles for mobile devices
+*/
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    hr {
+        margin: 0 5% 24px;
+    }    
+
+    .c-icon-placeholder {
+        margin: 0 6px;
+    }
+
+    .c-content {
+        padding: 0 25px;
+    }
+}
 
 /*
     Print styles.
