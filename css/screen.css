@@ -1,30 +1,9 @@
-/*------------------------------------*\
-#FONTS
-\*------------------------------------*/
-
-
-
-
-/*------------------------------------*\
-#Variables
-\*------------------------------------*/
-
 :root {
     /* colors */
     --color-white: #FFF;
     --color-black: #202020;
     --color-pink: #F9D9E8;
 }
-
-/*------------------------------------*\
-#GENERIC
-\*------------------------------------*/
-
-/*
-    Generic: Page
-    ---
-    Global page styles + universal box-sizing:
-*/
 
 html {
     width: 100%;
@@ -47,13 +26,6 @@ html {
     box-sizing: inherit;
 }
 
-/*
-* Remove text-shadow in selection highlight:
-* https://twitter.com/miketaylr/status/12228805301
-*
-* Customize the background color to match your design.
-*/
-
 ::-moz-selection {
     
     background-color: var(--color-pink);
@@ -67,16 +39,6 @@ html {
     color: var(--color-white);
     text-shadow: none;
 }
-
-/*------------------------------------*\
-#Elements
-\*------------------------------------*/
-
-/*
-    Elements: typography
-    ---
-    Default markup for typographic elements
-*/
 
 h1 {
     font-size: 116px;
@@ -93,15 +55,6 @@ p {
     font-weight: 400;
 }
 
-label,
-input {
-    display: block;
-}
-
-select {
-    width: 100%;
-}
-
 hr {
     border: 2px solid var(--color-black);
     background-color: var(--color-black);
@@ -109,9 +62,6 @@ hr {
     margin: 0 15% 24px;
 }
 
-/*------------------------------------*\
-  #OBJECTS
-\*------------------------------------*/
 .o-container {
     position: relative;
     width: 100%;
@@ -132,12 +82,6 @@ hr {
 .o-layout--align-center {
     align-items: center;
 }
-
-/*
-    Component: Footer
-    ---
-    Main app footer
-*/
 
 .c-content {
     text-align: center;
@@ -170,16 +114,6 @@ hr {
     outline: none;
 }
 
-/*------------------------------------*\
-#MEDIA
-\*------------------------------------*/
-
-/*
-    Media: extra large desktop
-    ---
-    Responsive styles for extra large desktops
-*/
-
 @media (min-width: 1440px) {
     h1 {
         font-size: 132px;
@@ -191,11 +125,6 @@ hr {
     
 }
 
-/*
-    Media: desktop
-    ---
-    Responsive styles for desktops
-*/
 
 @media (max-width: 1200px) {
     h1 {
@@ -207,11 +136,6 @@ hr {
     }
 }
 
-/*
-    Media: Tablets
-    ---
-    Responsive styles for tablets
-*/
 
 @media (max-width: 992px) {
     h1 {
@@ -233,11 +157,6 @@ hr {
     }
 }
 
-/*
-    Media: large mobile
-    ---
-    Responsive styles for mobile devices
-*/
 
 @media (max-width: 768px) {
     h1 {
@@ -258,11 +177,6 @@ hr {
     }
 }
 
-/*
-    Media: mobile
-    ---
-    Responsive styles for mobile devices
-*/
 
 @media (max-width: 576px) {
     h1 {
@@ -286,12 +200,6 @@ hr {
     }
 }
 
-/*
-    Print styles.
-    ---
-    Inlined to avoid the additional HTTP request:
-    http://www.phpied.com/delay-loading-your-print-css/
-*/
 
 @media print {
     *,
