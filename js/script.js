@@ -17,12 +17,6 @@ const changeFavicon = (rgb) => {
 var epoch = function() { return new Date().getTime()/2000; }
 // The last number in that line controls color cycle speed.
 
-function clip(min, n, max) {
-    if (min > n) { return min; }
-    if (max < n) { return max; }
-    return n;
-}
-
 // This is an adaptation of the rainbow function described at
 // http://basecase.org/env/on-rainbows (K is for @skimbrel, my
 // buddy who had the central insight that sines work for this).
@@ -45,11 +39,6 @@ function recolor(plus) {
     color = 'rgb(' + color.join(',') + ')';
     $('html').css({'background-color': color});
     changeFavicon(color);
-}
-
-//function that takes rgb color and converts it to hex
-function rgb2hex(rgb) {
-    
 }
     
 $(document).ready(function(){
