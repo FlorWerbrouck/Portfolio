@@ -9,8 +9,7 @@ html {
     height : 100%;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "rooney-sans",sans-serif;
-    font-display: swap;
+    font-family: "Segoe UI",sans-serif;
     background-color: var(--color-white);
     color: var(--color-black);
     font-weight: 700;
@@ -177,7 +176,7 @@ hr {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 586px) {
     h1 {
         font-size: 34px;
     }
