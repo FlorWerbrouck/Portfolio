@@ -37,11 +37,19 @@ function recolor(plus) {
     var cycle = ((epoch()/50) + plus) % 1;
     var color = K(cycle);
     color = 'rgb(' + color.join(',') + ')';
-    $('html').css({'background-color': color});
+    $('.o-intro').css({'background-color': color});
     changeFavicon(color);
 }
-    
+
+function appHeight() {
+    const doc = document.documentElement
+    doc.style.setProperty('--vh', (window.innerHeight*.01) + 'px');
+}
+  
+  
 $(document).ready(function(){
+    window.addEventListener('resize', appHeight);
+    appHeight();
     recolor(0);
     // The last number in this line is the update interval (in ms):
     a = function() { setInterval(function() { recolor(0) }, 100); }
