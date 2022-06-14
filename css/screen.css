@@ -64,6 +64,9 @@ h4 {
     color: var(--contrast-color);
     font-size: 24px;
     margin: 5px 0;
+    -webkit-transform: translateZ(-999px) scale(2);
+    transform: translateZ(-999px) scale(2);
+    z-index: 3;
 }
 
 p {
@@ -166,6 +169,11 @@ a {
     height: 60px;
 }
 
+.c-icon-link {
+    width: 24px;
+    height: 24px;
+}
+
 .c-icon-placeholder {
     margin: 0 12px;
     line-height: 0px;
@@ -216,7 +224,7 @@ a {
         margin: 0 10px;
     }
 
-    .c-icon {
+    .c-icon-link {
         width: 50px;
         height: 50px;
     }
@@ -236,7 +244,7 @@ a {
         margin: 0 8px;
     }
 
-    .c-icon {
+    .c-icon-link {
         width: 40px;
         height: 40px;
     }
