@@ -79,11 +79,19 @@ function LightenDarkenColor(col, amt) {
 
 
 $(document).ready(function(){
+    // fade in on scroll
     AOS.init();
+
+    // fix for mobile where 100vh isnt supported because of the navbar
     window.addEventListener('resize', appHeight);
     appHeight();
-    recolor(0);
+
     // The last number in this line is the update interval (in ms):
-    a = function() { setInterval(function() { recolor(0) }, 100); }
+    a = function() { setInterval(function() { recolor(0) }, 400); }
     a();
+
+    //get age from birthdate
+    var birthdate = new Date("2002-04-15");
+    var age = Math.abs((new Date(Date.now() - birthdate.getTime())).getUTCFullYear() - 1970);
+    document.querySelector('.js-age').innerHTML = age + ' year old';
 });
