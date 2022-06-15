@@ -2,6 +2,7 @@
     /* colors */
     --color-white: #FDFDFD;
     --color-black: #202020;
+    --changing-color: #FDFDFD;
 }
 
 html {
