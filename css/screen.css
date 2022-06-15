@@ -77,6 +77,12 @@ h5 {
     margin: 5px 0;
 }
 
+h6 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
 p {
     font-weight: 400;
 }
@@ -93,6 +99,14 @@ a {
     text-decoration: none;
     font-weight: 700;
     outline: none;
+}
+
+ul {
+    padding-left: 19px;
+}
+
+li {
+    font-weight: 400;
 }
 
 .o-containerfull {
@@ -147,7 +161,7 @@ a {
 
 @keyframes dropfill {  
     40% {
-        transform: translateY(105vh);
+        transform: translateY(calc(var(--vh, 1vh) * 100));
     }
     100% {
         transform: translateY(50vh) scale(40); 
@@ -252,7 +266,7 @@ a {
 
 .c-icon {
     height: 1.25rem;
-    margin: 0 5px;
+    margin: 0 5px -3px 0;
 }
 
 .c-icon-link {
@@ -271,6 +285,63 @@ a {
 .c-icon-placeholder:hover {
     opacity: 1;
     outline: none;
+}
+
+.education {
+    border-left: 3px solid var(--changing-color-dark);
+    padding: 0 30px;
+    margin-left: 155px;
+}
+
+.education .item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.education .item::before {
+    border: 3px solid var(--color-black);
+    position: absolute;
+    left: -43px;
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: var(--changing-color);
+}
+
+.education .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.education .school-info {
+    font-weight: 400;
+    position: absolute;
+    left: -188px;
+    top: 0;
+}
+
+@media (max-width: 767px) {
+    .education {
+        margin-left: 10px;
+        padding-right: 0;
+    }
+
+    .education .school-info {
+        position: static;
+        margin-bottom: 1rem;
+    }
+    
+    .education .location {
+        float:right;
+        position: static;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -383,6 +454,10 @@ a {
 .u-padding {
     padding-top: 10px;
     padding-bottom: 50px;
+}
+
+.u-mb-10 {
+    margin-bottom: 10px;
 }
 
 .u-display-none > * {
