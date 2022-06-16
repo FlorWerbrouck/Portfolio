@@ -470,14 +470,22 @@ li {
     }
 
     .c-profile-picture {
-        margin-top: -30px;
+        margin-top: 0;
         width: 100%;
+        border-radius: 5% !important;
         max-width: none;
         min-width: none;
     }
 
     .u-fb-70 {
+        margin-top: -100px;
+        padding: 0 10px;
+        background-color: rgba(253, 253, 253, 0.9);
         flex-basis: 100% !important;
+    }
+
+    .u-fb-70>p:nth-child(2) {
+        display: none;
     }
 }
 
