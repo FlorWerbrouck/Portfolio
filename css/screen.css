@@ -194,12 +194,12 @@ li {
 }
 
 .c-content {
-    max-width: 1200px;
     text-align: center;
     padding: 0 50px;
 }
 
 .c-content-aboutme {
+    max-width: 1200px;
     text-align: left;
 }
 
