@@ -79,6 +79,9 @@ function LightenDarkenColor(col, amt) {
 
 
 $(document).ready(function(){
+    if (window.location.hash == "#aboutme") {
+        window.location.href = window.location.href.split('#')[0];
+    }
     // fade in on scroll
     AOS.init();
 
