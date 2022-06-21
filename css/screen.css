@@ -47,12 +47,12 @@ html {
 }
 
 h1 {
-    font-size: 116px;
+    font-size: 92px;
     margin: 0px;
 }
 
 h2 {
-    font-size: 72px;
+    font-size: 56px;
     margin: 0 0 24px;
 }
 
@@ -361,14 +361,6 @@ li {
 }
 
 @media (min-width: 1440px) {
-    h1 {
-        font-size: 132px;
-    }
-    
-    h2 {
-        font-size: 92px;
-    }
-
     .c-project:nth-last-child(4n):first-child,
     .c-project:nth-last-child(4n):first-child ~ .c-project {
         flex-basis: calc((100% / 4) - (60px / 4)) !important;
