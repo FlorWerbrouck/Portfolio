@@ -16,7 +16,7 @@ const changeFavicon = (rgb) => {
 }
 
 // Today in Bad Variable Names, we visit something I chose to call “epoch”…	
-var epoch = function() { return new Date().getTime()/1000; }
+var epoch = function() { return new Date().getTime()/1500; }
 // The last number in that line controls color cycle speed.
 
 // This is an adaptation of the rainbow function described at
