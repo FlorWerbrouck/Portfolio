@@ -132,7 +132,7 @@ li {
     opacity: 0;
     transform: scale(0.5);
     animation: fade-in 1s ease-in-out forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
 }
 
 @keyframes fade-in {
@@ -156,7 +156,7 @@ li {
     width: 10vh;
     height: 10vh;
     background-color: var(--changing-color);
-    animation: dropfill 3s linear forwards;
+    animation: dropfill 2s linear forwards;
 }
 
 @keyframes dropfill {  
