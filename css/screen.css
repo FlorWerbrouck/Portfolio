@@ -211,6 +211,7 @@ li {
 .c-project {
     background-color: var(--changing-color);
     padding: 15px;
+    border-radius: 15px !important;
     flex-basis: 100%;
     box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
 }
@@ -472,7 +473,7 @@ li {
     .c-profile-picture {
         margin-top: 0;
         width: 100%;
-        border-radius: 5% !important;
+        border-radius: 15px !important;
         max-width: none;
         min-width: none;
     }
