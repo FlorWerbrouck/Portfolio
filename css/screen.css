@@ -538,6 +538,12 @@ li {
     width: 100%;
 }
 
+@media (hover: none) {
+    .underline {
+        border-bottom: 3px solid var(--changing-color-dark);
+    }
+}
+
 @media print {
     *,
     *:before,
